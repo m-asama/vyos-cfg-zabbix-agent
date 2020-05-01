@@ -1,4 +1,7 @@
 priority: 999
 help: Zabbix-agent configuration
-delete: sudo /usr/sbin/invoke-rc.d zabbix-agent stop 
-end: sudo /usr/sbin/invoke-rc.d zabbix-agent restart
+end: if [ "$COMMIT_ACTION" != DELETE ]; then
+         sudo /usr/bin/systemctl restart zabbix-agent.service
+     else
+         sudo /usr/bin/systemctl stop zabbix-agent.service
+     fi

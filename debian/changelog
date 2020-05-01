@@ -1,3 +1,9 @@
+vyos-cfg-zabbix-agent (0.0.1+helium0+focal0+rev20200501002643) unstable; urgency=low
+
+  * New branch.
+
+ -- Masakazu Asama <m-asama@ginzado.co.jp>  Fri,  7 Feb 2020 20:59:26 +0900
+
 vyos-cfg-zabbix-agent (0.0.1) unstable; urgency=low
 
   * Initial Release.
